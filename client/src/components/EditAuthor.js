@@ -30,7 +30,7 @@ const EditAuthor = (props) =>{
     const editSubmitHandler = (e)=>{
         e.preventDefault();
 
-        axios.put(`http://localhost:8000/api/authors/${id}`, {name}) // this is short hand syntax for name:name
+        axios.put(`http://localhost:8000/api/authors/${id}`, {name}) // this is short hand syntax for name:name NOTE Makes difference from front to back end
             .then((res)=>{
                 console.log(res)
                 console.log(res.data)
